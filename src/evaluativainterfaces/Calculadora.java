@@ -38,12 +38,12 @@ public class Calculadora extends javax.swing.JFrame {
         JLabelResultado = new javax.swing.JLabel();
         JTResultado = new javax.swing.JTextField();
         jSeparatorResultado = new javax.swing.JSeparator();
-        jPbotonSuma1 = new javax.swing.JPanel();
-        TextBotonSuma1 = new java.awt.Label();
-        jPbotonSuma2 = new javax.swing.JPanel();
-        TextBotonSuma2 = new java.awt.Label();
-        jPbotonSuma3 = new javax.swing.JPanel();
-        TextBotonSuma3 = new java.awt.Label();
+        jPbotonClean = new javax.swing.JPanel();
+        TextBotonClean = new java.awt.Label();
+        jPbotonDividir = new javax.swing.JPanel();
+        TextBotonDividir = new java.awt.Label();
+        jPbotonMultiplicar = new javax.swing.JPanel();
+        TextBotonMulti = new java.awt.Label();
         jPbotonSuma4 = new javax.swing.JPanel();
         TextBotonSuma4 = new java.awt.Label();
         jPanelBar = new javax.swing.JPanel();
@@ -207,105 +207,99 @@ public class Calculadora extends javax.swing.JFrame {
 
         jSeparatorResultado.setForeground(new java.awt.Color(0, 134, 190));
 
-        TextBotonSuma1.setAlignment(java.awt.Label.CENTER);
-        TextBotonSuma1.setBackground(new java.awt.Color(0, 134, 190));
-        TextBotonSuma1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        TextBotonSuma1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
-        TextBotonSuma1.setForeground(new java.awt.Color(255, 255, 255));
-        TextBotonSuma1.setText("SUMA");
-        TextBotonSuma1.addMouseListener(new java.awt.event.MouseAdapter() {
+        TextBotonClean.setAlignment(java.awt.Label.CENTER);
+        TextBotonClean.setBackground(new java.awt.Color(0, 134, 190));
+        TextBotonClean.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        TextBotonClean.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        TextBotonClean.setForeground(new java.awt.Color(255, 255, 255));
+        TextBotonClean.setText("CLEAN");
+        TextBotonClean.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                TextBotonSuma1MouseClicked(evt);
+                TextBotonCleanMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                TextBotonSuma1MouseEntered(evt);
+                TextBotonCleanMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                TextBotonSuma1MouseExited(evt);
+                TextBotonCleanMouseExited(evt);
             }
         });
 
-        javax.swing.GroupLayout jPbotonSuma1Layout = new javax.swing.GroupLayout(jPbotonSuma1);
-        jPbotonSuma1.setLayout(jPbotonSuma1Layout);
-        jPbotonSuma1Layout.setHorizontalGroup(
-            jPbotonSuma1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPbotonSuma1Layout.createSequentialGroup()
-                .addComponent(TextBotonSuma1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 19, Short.MAX_VALUE))
+        javax.swing.GroupLayout jPbotonCleanLayout = new javax.swing.GroupLayout(jPbotonClean);
+        jPbotonClean.setLayout(jPbotonCleanLayout);
+        jPbotonCleanLayout.setHorizontalGroup(
+            jPbotonCleanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(TextBotonClean, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
         );
-        jPbotonSuma1Layout.setVerticalGroup(
-            jPbotonSuma1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(TextBotonSuma1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+        jPbotonCleanLayout.setVerticalGroup(
+            jPbotonCleanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(TextBotonClean, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        TextBotonSuma2.setAlignment(java.awt.Label.CENTER);
-        TextBotonSuma2.setBackground(new java.awt.Color(0, 134, 190));
-        TextBotonSuma2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        TextBotonSuma2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
-        TextBotonSuma2.setForeground(new java.awt.Color(255, 255, 255));
-        TextBotonSuma2.setText("SUMA");
-        TextBotonSuma2.addMouseListener(new java.awt.event.MouseAdapter() {
+        TextBotonDividir.setAlignment(java.awt.Label.CENTER);
+        TextBotonDividir.setBackground(new java.awt.Color(0, 134, 190));
+        TextBotonDividir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        TextBotonDividir.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        TextBotonDividir.setForeground(new java.awt.Color(255, 255, 255));
+        TextBotonDividir.setText("DIV");
+        TextBotonDividir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                TextBotonSuma2MouseClicked(evt);
+                TextBotonDividirMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                TextBotonSuma2MouseEntered(evt);
+                TextBotonDividirMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                TextBotonSuma2MouseExited(evt);
+                TextBotonDividirMouseExited(evt);
             }
         });
 
-        javax.swing.GroupLayout jPbotonSuma2Layout = new javax.swing.GroupLayout(jPbotonSuma2);
-        jPbotonSuma2.setLayout(jPbotonSuma2Layout);
-        jPbotonSuma2Layout.setHorizontalGroup(
-            jPbotonSuma2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPbotonSuma2Layout.createSequentialGroup()
-                .addComponent(TextBotonSuma2, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 19, Short.MAX_VALUE))
+        javax.swing.GroupLayout jPbotonDividirLayout = new javax.swing.GroupLayout(jPbotonDividir);
+        jPbotonDividir.setLayout(jPbotonDividirLayout);
+        jPbotonDividirLayout.setHorizontalGroup(
+            jPbotonDividirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(TextBotonDividir, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
         );
-        jPbotonSuma2Layout.setVerticalGroup(
-            jPbotonSuma2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(TextBotonSuma2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+        jPbotonDividirLayout.setVerticalGroup(
+            jPbotonDividirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(TextBotonDividir, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        TextBotonSuma3.setAlignment(java.awt.Label.CENTER);
-        TextBotonSuma3.setBackground(new java.awt.Color(0, 134, 190));
-        TextBotonSuma3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        TextBotonSuma3.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
-        TextBotonSuma3.setForeground(new java.awt.Color(255, 255, 255));
-        TextBotonSuma3.setText("SUMA");
-        TextBotonSuma3.addMouseListener(new java.awt.event.MouseAdapter() {
+        TextBotonMulti.setAlignment(java.awt.Label.CENTER);
+        TextBotonMulti.setBackground(new java.awt.Color(0, 134, 190));
+        TextBotonMulti.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        TextBotonMulti.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        TextBotonMulti.setForeground(new java.awt.Color(255, 255, 255));
+        TextBotonMulti.setText("MULTI");
+        TextBotonMulti.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                TextBotonSuma3MouseClicked(evt);
+                TextBotonMultiMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                TextBotonSuma3MouseEntered(evt);
+                TextBotonMultiMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                TextBotonSuma3MouseExited(evt);
+                TextBotonMultiMouseExited(evt);
             }
         });
 
-        javax.swing.GroupLayout jPbotonSuma3Layout = new javax.swing.GroupLayout(jPbotonSuma3);
-        jPbotonSuma3.setLayout(jPbotonSuma3Layout);
-        jPbotonSuma3Layout.setHorizontalGroup(
-            jPbotonSuma3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPbotonSuma3Layout.createSequentialGroup()
-                .addComponent(TextBotonSuma3, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 19, Short.MAX_VALUE))
+        javax.swing.GroupLayout jPbotonMultiplicarLayout = new javax.swing.GroupLayout(jPbotonMultiplicar);
+        jPbotonMultiplicar.setLayout(jPbotonMultiplicarLayout);
+        jPbotonMultiplicarLayout.setHorizontalGroup(
+            jPbotonMultiplicarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(TextBotonMulti, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
         );
-        jPbotonSuma3Layout.setVerticalGroup(
-            jPbotonSuma3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(TextBotonSuma3, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+        jPbotonMultiplicarLayout.setVerticalGroup(
+            jPbotonMultiplicarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(TextBotonMulti, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         TextBotonSuma4.setAlignment(java.awt.Label.CENTER);
         TextBotonSuma4.setBackground(new java.awt.Color(0, 134, 190));
         TextBotonSuma4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        TextBotonSuma4.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        TextBotonSuma4.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         TextBotonSuma4.setForeground(new java.awt.Color(255, 255, 255));
-        TextBotonSuma4.setText("SUMA");
+        TextBotonSuma4.setText("ACEPTAR");
         TextBotonSuma4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 TextBotonSuma4MouseClicked(evt);
@@ -322,9 +316,7 @@ public class Calculadora extends javax.swing.JFrame {
         jPbotonSuma4.setLayout(jPbotonSuma4Layout);
         jPbotonSuma4Layout.setHorizontalGroup(
             jPbotonSuma4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPbotonSuma4Layout.createSequentialGroup()
-                .addComponent(TextBotonSuma4, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 19, Short.MAX_VALUE))
+            .addComponent(TextBotonSuma4, javax.swing.GroupLayout.DEFAULT_SIZE, 114, Short.MAX_VALUE)
         );
         jPbotonSuma4Layout.setVerticalGroup(
             jPbotonSuma4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -348,12 +340,12 @@ public class Calculadora extends javax.swing.JFrame {
                             .addComponent(jPbotonSuma, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(30, 30, 30)
                         .addGroup(jPanelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jPbotonSuma3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPbotonSuma2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(41, 41, 41)
-                        .addGroup(jPanelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jPbotonSuma1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPbotonSuma4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jPbotonMultiplicar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPbotonDividir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(50, 50, 50)
+                        .addGroup(jPanelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPbotonSuma4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPbotonClean, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanelLoginLayout.createSequentialGroup()
                         .addGap(71, 71, 71)
                         .addGroup(jPanelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -396,12 +388,12 @@ public class Calculadora extends javax.swing.JFrame {
                 .addGap(57, 57, 57)
                 .addGroup(jPanelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPbotonSuma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPbotonSuma1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPbotonSuma3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPbotonClean, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPbotonMultiplicar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addGroup(jPanelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPbotonResta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPbotonSuma2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPbotonDividir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPbotonSuma4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(78, Short.MAX_VALUE))
         );
@@ -411,7 +403,7 @@ public class Calculadora extends javax.swing.JFrame {
         jPanelbackgroundLayout.setHorizontalGroup(
             jPanelbackgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelbackgroundLayout.createSequentialGroup()
-                .addContainerGap(56, Short.MAX_VALUE)
+                .addContainerGap(55, Short.MAX_VALUE)
                 .addComponent(jPanelLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(51, 51, 51))
         );
@@ -543,41 +535,41 @@ public class Calculadora extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_JTResultadoActionPerformed
 
-    private void TextBotonSuma1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonSuma1MouseClicked
+    private void TextBotonCleanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonCleanMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_TextBotonSuma1MouseClicked
+    }//GEN-LAST:event_TextBotonCleanMouseClicked
 
-    private void TextBotonSuma1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonSuma1MouseEntered
+    private void TextBotonCleanMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonCleanMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_TextBotonSuma1MouseEntered
+    }//GEN-LAST:event_TextBotonCleanMouseEntered
 
-    private void TextBotonSuma1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonSuma1MouseExited
+    private void TextBotonCleanMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonCleanMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_TextBotonSuma1MouseExited
+    }//GEN-LAST:event_TextBotonCleanMouseExited
 
-    private void TextBotonSuma2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonSuma2MouseClicked
+    private void TextBotonDividirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonDividirMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_TextBotonSuma2MouseClicked
+    }//GEN-LAST:event_TextBotonDividirMouseClicked
 
-    private void TextBotonSuma2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonSuma2MouseEntered
+    private void TextBotonDividirMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonDividirMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_TextBotonSuma2MouseEntered
+    }//GEN-LAST:event_TextBotonDividirMouseEntered
 
-    private void TextBotonSuma2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonSuma2MouseExited
+    private void TextBotonDividirMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonDividirMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_TextBotonSuma2MouseExited
+    }//GEN-LAST:event_TextBotonDividirMouseExited
 
-    private void TextBotonSuma3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonSuma3MouseClicked
+    private void TextBotonMultiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonMultiMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_TextBotonSuma3MouseClicked
+    }//GEN-LAST:event_TextBotonMultiMouseClicked
 
-    private void TextBotonSuma3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonSuma3MouseEntered
+    private void TextBotonMultiMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonMultiMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_TextBotonSuma3MouseEntered
+    }//GEN-LAST:event_TextBotonMultiMouseEntered
 
-    private void TextBotonSuma3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonSuma3MouseExited
+    private void TextBotonMultiMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonMultiMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_TextBotonSuma3MouseExited
+    }//GEN-LAST:event_TextBotonMultiMouseExited
 
     private void TextBotonSuma4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TextBotonSuma4MouseClicked
         // TODO add your handling code here:
@@ -611,21 +603,21 @@ public class Calculadora extends javax.swing.JFrame {
     private javax.swing.JTextField JTNumero1;
     private javax.swing.JTextField JTNumero2;
     private javax.swing.JTextField JTResultado;
+    private java.awt.Label TextBotonClean;
+    private java.awt.Label TextBotonDividir;
+    private java.awt.Label TextBotonMulti;
     private java.awt.Label TextBotonResta;
     private java.awt.Label TextBotonSuma;
-    private java.awt.Label TextBotonSuma1;
-    private java.awt.Label TextBotonSuma2;
-    private java.awt.Label TextBotonSuma3;
     private java.awt.Label TextBotonSuma4;
     private javax.swing.JLabel jLabelButonExit;
     private javax.swing.JPanel jPanelBar;
     private javax.swing.JPanel jPanelLogin;
     private javax.swing.JPanel jPanelbackground;
+    private javax.swing.JPanel jPbotonClean;
+    private javax.swing.JPanel jPbotonDividir;
+    private javax.swing.JPanel jPbotonMultiplicar;
     private javax.swing.JPanel jPbotonResta;
     private javax.swing.JPanel jPbotonSuma;
-    private javax.swing.JPanel jPbotonSuma1;
-    private javax.swing.JPanel jPbotonSuma2;
-    private javax.swing.JPanel jPbotonSuma3;
     private javax.swing.JPanel jPbotonSuma4;
     private javax.swing.JSeparator jSeparatorNumero1;
     private javax.swing.JSeparator jSeparatorNumero2;
