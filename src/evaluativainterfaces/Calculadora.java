@@ -584,6 +584,7 @@ public class Calculadora extends javax.swing.JFrame {
 
     private void JTextBotonCleanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JTextBotonCleanMouseClicked
         ResetFields();
+        hideErrors();
     }//GEN-LAST:event_JTextBotonCleanMouseClicked
 
     private void JTextBotonCleanMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JTextBotonCleanMouseEntered
